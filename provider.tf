@@ -1,8 +1,5 @@
 provider "aws" {
 
-  //profile = "zouhaier"
-  access_key = "AKIARHVDGYJY4GQBLCXW"
-  secret_key = "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"
   region     = "us-east-1"
 }
 
@@ -12,11 +9,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 3.21"
     }
-  backend "s3" {
-    region  = "us-east-1"
-    key     = "/env/dev/terraform.tfstate"
-    bucket  = "aws-terraform-gitlabci-bucket"
-  }
+  #backend "s3" {
+    #region  = "us-east-1"
+    #key     = "/env/dev/terraform.tfstate"
+    #bucket  = "aws-terraform-gitlabci-bucket"
+  #}
   }
 
 }
