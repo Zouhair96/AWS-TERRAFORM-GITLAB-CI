@@ -9,11 +9,7 @@ terraform {
       version = "~> 3.21"
     }
   }
-   # backend "s3" {
-    #region  = "us-east-1"
-    #key     = "environment/dev/terraform.tfstate"
-    #bucket  = "aws-terraform-gitlabci-bucket"
-  #}
+
 
 }
 
